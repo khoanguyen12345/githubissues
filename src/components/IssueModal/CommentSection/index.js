@@ -39,7 +39,7 @@ const CommentSection = ({selectedIssue, repo,owner,comments,setComments,setTotal
           
         };
         fetchComments();
-    }, [owner,repo,selectedIssue.number]);
+    }, [owner,repo,selectedIssue.number,setCommentLoading,setComments,selectedIssue.comments,setErrorMessageCommentSection]);
     
 
     if (comments[0] === "No Comments"){
