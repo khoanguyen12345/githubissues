@@ -70,6 +70,7 @@ function App() {
   }, [owner, repo, pageNum]);
 
   const handleSearchInputChange = (event) => {
+    setErrorMsg("");
     setSearchTerm(event.target.value);
   };
   const showDetail = (selectedIssue)=>{
